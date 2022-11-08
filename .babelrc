@@ -2,5 +2,5 @@
   "env": {},
   "ignore": [],
   "plugins": [],
-  "presets": []
+  "presets": ["@babel/preset-env"]
 }

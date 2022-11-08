@@ -33,9 +33,20 @@ const config = {
         type: "asset",
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.m?js/,
+        type: "javascript/auto"
+      },
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false
+        }
       }
+      
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
