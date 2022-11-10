@@ -1,25 +1,3 @@
-# _{Application Name}_
-
-## Contributers
-* Robert Bryan
-
-## Description
-
-
-## Technologies Used
-* HTML
-* CSS
-* Javascript
-* Bootstrap
-
-## Setup/Installation Requirements
-
-
-## Known Bugs
-
-
-## License
-
 MIT License
 
 Copyright (c) 2022 Robert Bryan
