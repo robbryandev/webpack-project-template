@@ -3,6 +3,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -22,6 +23,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: "src/index.html",
     }),
+    new Dotenv()
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
@@ -54,8 +56,11 @@ const config = {
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
-    ],
+    ]
   },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
+  }
 };
 
 module.exports = () => {
